@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Wildcatapp</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+    <ul class="nav">
+        <li id="home"><a herf="#home"><img src="https://s3.amazonaws.com/media.pinterest.com/previews/12zCVwlZ.png" /><c>Wildcat</c></a></li>
+        <li><a href="#news">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li id="signUp"><a href="#signUp">Sign Up</a></li>
+    </ul>
+    <div class="info">
+        <div id="page1">
+            <div class="inside">
+                <img src="https://gaw-wildcat-app.firebaseapp.com/sharedAssets/Wildcat.png" />
+                <h1>Wildcat</h1>
+                <h2>
+                    Hello and Welcome to our Wildcat app. Purpose = keep ALL members of the Wilson family informed of important school occurrences
+                    Announcement + publicity system for Wilson
+                    Unified
+                    Streamlined
+                    Too many systems right now
+                </h2>
+            </div>
+        </div>
+        <div id="page2">
+            <div class="inside">
+                <span class="feature">Annoucement</span>
+                <span class="feature">Request</span>
+            </div>
+        </div>
+        <div id="page3">
+            <div class="inside">
+                <img src="https://gaw-wildcat-app.firebaseapp.com/sharedAssets/Wildcat.png" />
+            </div>
+        </div>
+        <div id="page4">
+            <div class="inside">
+            </div>
+        </div>
+    </div>
+    <button id="quest" onclick="iframe()">
+        Questions?
+    </button>
+    <iframe id="dialog" width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/9344dac4-ca03-4453-8fd1-0b1f655fd1df"></iframe>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC3e9oJo6n2a4HZQmu0NHDz1yItKt0qQf4",
+            authDomain: "wildcat-3a110.firebaseapp.com",
+            databaseURL: "https://wildcat-3a110.firebaseio.com",
+            projectId: "wildcat-3a110",
+            storageBucket: "wildcat-3a110.appspot.com",
+            messagingSenderId: "666562497589"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        function iframe() {
+            document.getElementById('dialog').style.display = "block";
+            document.getElementById('quest').style.display = "none";
+        }
+    </script>
+</body>
+</html>

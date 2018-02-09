@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "wildcat-3a110",
+    "staging": "wildcat-3a110"
+  }
+}

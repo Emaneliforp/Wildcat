@@ -1,0 +1,108 @@
+﻿body {
+    overflow-x: hidden;
+}
+
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    top: 0;
+    background-color: rgba(255,255,255, 0.3);
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: darkred;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1vw;
+        font-family: Verdana;
+    }
+
+#home {
+    padding-left: 35vw;
+}
+
+li img {
+    padding-left: 1vw;
+    width: 1.5vw;
+}
+
+li c {
+    font-size: 1vw;
+    vertical-align: top;
+}
+
+li a:hover {
+    background-color: rgba(0,0,0, 0.1);
+}
+
+#quest {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #808080;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+iframe {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.info div {
+    margin-bottom: 2vh;
+    border-radius: 2vw;
+    width: 100%;
+    height: 85vh;
+}
+
+.info img {
+    width: 100%;
+    padding: 0.5vw;
+}
+
+#page1 {
+    background: linear-gradient(to bottom right, #FF4040, yellow);
+    column-count: 2;
+}
+
+#page2 {
+    column-count: 2;
+}
+
+.feature {
+    border-radius: 2vw;
+    height: 85vh;
+    background: linear-gradient(to bottom right, #31D3F0, purple);
+    display: inline-block;
+    width: 100%;
+}
+
+#page3 {
+    background: linear-gradient(to bottom right, #FF4040, yellow);
+}
+
+#page4 {
+    background: linear-gradient(to bottom right, #FF4040, yellow);
+}
+
+#page1 img {
+    width: 50vw;
+    padding: 0.5vw;
+}
