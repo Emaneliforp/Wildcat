@@ -9,38 +9,37 @@
     background-color: rgba(255,255,255, 0.3);
     position: sticky;
     position: -webkit-sticky;
+    height: 6vh;
 }
 
-li {
+.nav li {
     float: left;
+    padding-left: 7vw;
 }
 
-    li a {
-        display: block;
-        color: darkred;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 1vw;
-        font-family: Verdana;
-    }
+li h2{
+    display: block;
+    color: #990000;
+    text-align: center;
+    padding: 0.5vw;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-#home {
-    padding-left: 35vw;
+#home{
+    padding-left: 28vw;
 }
 
 li img {
-    padding-left: 1vw;
-    width: 1.5vw;
-}
-
-li c {
-    font-size: 1vw;
-    vertical-align: top;
+    width: 1vw;
 }
 
 li a:hover {
-    background-color: rgba(0,0,0, 0.1);
+    border-bottom: 0.1vw solid #CC0000;
+    color: #CC0000;
 }
 
 #quest {
@@ -72,26 +71,113 @@ iframe {
     height: 85vh;
 }
 
-.info img {
-    width: 100%;
-    padding: 0.5vw;
-}
-
 #page1 {
+    height: 88vh;
     background: linear-gradient(to bottom right, #FF4040, yellow);
     column-count: 2;
+}
+#page1 img {
+    height: 95%;
+}
+.home {
+    padding-top: 8vh;
+    font-size: 3vw;
+    font-family: Verdana;
+    color: white;
+    text-align:center;
+}
+h7 {
+    font-size:1.5vw;
+}
+h9 {
+    font-size:2vw;
+}
+#an {
+    font-size: 5vw;
+    color: #CC0000;
+}
+#an:hover {
+    text-shadow: 0.3vw 0.3vw white;
+}
+.button {
+    margin-top: 15vh;
+    margin-left: 15vw;
+    border-radius: 1vw;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 20vw;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    }
+#login {
+    text-decoration: none;
+    color:white;
+}
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+        }
+
+.button:hover span {
+    padding-right: 25px;
+
+    }
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+        }
+#pagec {
+    padding-top: 8vh;
+    font-size: 3vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to top right, #ffafbd, #ffc3a0);
+    column-count: 2;
+    height: 80vh;
+}
+.an {
+    padding-top: 8vh;
+    font-size: 2vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    margin-left:2vw;
+    margin-top: 3vw;
+}
+#gaw{
+    color: #CC0000;
 }
 
 #page2 {
     column-count: 2;
 }
-
 .feature {
     border-radius: 2vw;
     height: 85vh;
     background: linear-gradient(to bottom right, #31D3F0, purple);
     display: inline-block;
     width: 100%;
+    font-size: 3vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
 }
 
 #page3 {
