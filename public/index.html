@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="home.css">
-    <link rel="stylesheet" type="text/javascript" href="home.js">
     <title>Welcome to Firebase Hosting</title>
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/4.9.1/firebase-app.js"></script>
@@ -13,48 +12,108 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 </head>
-  <body>
-      <ul class="nav">
-          <li id="home"><a herf="#home"><img src="https://s3.amazonaws.com/media.pinterest.com/previews/12zCVwlZ.png" /><c>Wildcat</c></a></li>
-          <li><a href="#news">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li id="signUp"><a href="#signUp">Sign Up</a></li>
-      </ul>
-      <div class="info">
-          <div id="page1">
-              <div class="inside">
-                  <img src="https://gaw-wildcat-app.firebaseapp.com/sharedAssets/Wildcat.png" />
-                  <h1>Wildcat</h1>
-                  <h2>
-                      Hello and Welcome to our Wildcat app. Purpose = keep ALL members of the Wilson family informed of important school occurrences
-                      Announcement + publicity system for Wilson
-                      Unified
-                      Streamlined
-                      Too many systems right now
-                  </h2>
-              </div>
-          </div>
-          <div id="page2">
-              <div class="inside">
-                  <span class="feature">Annoucement</span>
-                  <span class="feature">Request</span>
-              </div>
-          </div>
-          <div id="page3">
-              <div class="inside">
-                  <img src="https://gaw-wildcat-app.firebaseapp.com/sharedAssets/Wildcat.png" />
-              </div>
-          </div>
-          <div id="page4">
-              <div class="inside">
-              </div>
-          </div>
-      </div>
-      <button id="quest" onclick="iframe()">
-          Questions?
-      </button>
-      <iframe id="dialog" width="350"
-              height="430"
-              src="https://console.dialogflow.com/api-client/demo/embedded/9344dac4-ca03-4453-8fd1-0b1f655fd1df"></iframe>
-  </body>
+<body>
+    <ul class="nav">
+        <li id="home" onclick="topFunction()"><h2><img src="https://s3.amazonaws.com/media.pinterest.com/previews/12zCVwlZ.png" />Wildcat</h2></li>
+        <li onclick="secFunction()"><h2>Sign Up</h2></li>
+        <li onclick="thiFunction()"><h2>About Us</h2></li>
+        <li onclick="fouFunction()"><h2>Review</h2></li>
+    </ul>
+    <div class="info">
+        <div id="page1">
+            <img src="https://s3.amazonaws.com/media.pinterest.com/previews/12zCVwlZ.png" />
+            <h1 class="home">
+                BE PREPARE<br /> <h7>---And---</h7><br /> Never Miss<br /> <h9>An</h9><br /> <h8 id="an">Annoucement</h8>
+            </h1>
+            <button class="button" style="vertical-align:middle"><span><a id="login" href="https://gaw-wildcat-app.firebaseapp.com/login.html">Sign Up</a> </span></button>
+        </div>
+        <div id="pagec">
+            <h1 class="an">
+                Wildcat allows student to inform and access to all of the <h8 id="gaw">Glen A. Wilson</h8> school’s <h8 id="gaw">Announcement</h8> in anywhere<br /> at Anytime.<br /> Never miss any <h8 id="gaw">Announcement</h8>.<br /> Be prepared.<br /> And be yourself Best.
+                </p>
+            </h1>
+            <img src="https://s3.amazonaws.com/media.pinterest.com/previews/12zCVwlZ.png" />
+        </div>
+        <div id="page2">
+            <div class="feature" id="cal">
+                <span><img src="https://s3.amazonaws.com/media.pinterest.com/previews/BA4qzlrR.png" /></span>
+                <h2 class="fename">CALENDAR</h2>
+                <h3>Keep track of your school schedule of events, fundraising, meetings.</h3>
+            </div>
+            <div class="feature">
+                <span id="ani"><img src="https://s3.amazonaws.com/media.pinterest.com/previews/rufBWA35.png" /></span>
+                <h2 class="fename">Annoucement</h2>
+                <h3>Easily follow your favorite Clubs, Competitive teams, Sports, and Other Extracurriculars.</h3>
+            </div>
+            <div class="feature">
+                <span id="ani"><img src="https://s3.amazonaws.com/media.pinterest.com/previews/JQY1fa4o.png" /></span>
+                <h2 class="fename">Directory</h2>
+                <h3>Provide information to contact with organizations, teachers, counsels.</h3>
+            </div>
+        </div>
+        <div id="page3">
+            <h1 class="an">
+                <p id="htsu">How To Sign Up </p>
+                <ul>1. <a id="gaw" href="https://gaw-wildcat-app.firebaseapp.com/login.html">Click Here</a></ul>
+                <ul>2. Click the Sign Up button</ul>
+                <ul>3. Fill in your information</ul>
+                <ul>4. Log in to <a id="gaw" href="https://gaw-wildcat-app.firebaseapp.com/login.html">Wildcat</a></ul>
+            </h1>
+            <img src="https://s3.amazonaws.com/media.pinterest.com/previews/RecR5H9p.png" />
+        </div>
+        <div id="page4">
+            <img src="https://s3.amazonaws.com/media.pinterest.com/previews/O7CodwqW.png" />
+            <p class="an1"> Wildcat is made by the Glen A. Wilson code team. Our goal is to contribute to the schools, communities as much as possible through coding. We also helps students improve their computer science skills throught these project.</p>
+            <button class="button1" style="vertical-align:middle"><span><a id="login" href="https://www.youtube.com/channel/UCUBqAzggd_nAnn8ll6fmGUw">Subscribe Now</a> </span></button>
+        </div>
+        <div id="page5">
+            <h1 class="an2">
+                <p>Please leave us a comment</p>
+                <textarea id="review"></textarea><br />
+                <p id="hidden">
+                    <button id="send" onclick="send()">Send</button><br />
+                    <h8 id="ty">Thank You</h8>
+                </p>
+            </h1>
+            <img src="https://s3.amazonaws.com/media.pinterest.com/previews/12zCVwlZ.png" />
+        </div>
+        <button id="quest" onclick="iframe()">
+            Questions?
+        </button>
+        <iframe id="dialog" width="350"
+                height="430"
+                src="https://console.dialogflow.com/api-client/demo/embedded/9344dac4-ca03-4453-8fd1-0b1f655fd1df"></iframe>
+        <script>
+            function send() {
+                document.getElementById('ty').style.display = "block";
+                let review = document.getElementById('review').value;
+               
+                firebase.database().ref('/review').push({
+                    review: review,
+                });
+            }
+        </script>
+        <script>
+           function iframe() {
+               document.getElementById('dialog').style.display = "block";
+               document.getElementById('quest').style.display = "none";
+            }
+           function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+           }
+           function secFunction() {
+               document.body.scrollTop = 1915;
+               document.documentElement.scrollTop = 1915;
+           }
+           function thiFunction() {
+               document.body.scrollTop = 2600;
+               document.documentElement.scrollTop = 2600;
+           }
+           function fouFunction() {
+               document.body.scrollTop = 3200;
+               document.documentElement.scrollTop = 3200;
+           }
+       </script>
+</body>
 </html>

@@ -62,7 +62,20 @@ iframe {
     bottom: 0;
     right: 0;
 }
-
+#x {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #808080;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 16px;
+    cursor: pointer;
+}
 .info div {
     margin-bottom: 2vh;
     border-radius: 2vw;

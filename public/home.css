@@ -1,5 +1,4 @@
 ﻿body {
-    overflow-x: hidden;
 }
 
 .nav {
@@ -9,38 +8,37 @@
     background-color: rgba(255,255,255, 0.3);
     position: sticky;
     position: -webkit-sticky;
+    height: 6vh;
 }
 
-li {
-    float: left;
-}
-
-    li a {
-        display: block;
-        color: darkred;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 1vw;
-        font-family: Verdana;
+    .nav li {
+        float: left;
+        padding-left: 7vw;
     }
 
+li h2 {
+    display: block;
+    color: #990000;
+    text-align: center;
+    padding: 0.5vw;
+    text-decoration: none;
+    font-size: 1vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 #home {
-    padding-left: 35vw;
+    padding-left: 28vw;
 }
 
 li img {
-    padding-left: 1vw;
-    width: 1.5vw;
-}
-
-li c {
-    font-size: 1vw;
-    vertical-align: top;
+    width: 1vw;
 }
 
 li a:hover {
-    background-color: rgba(0,0,0, 0.1);
+    border-bottom: 0.1vw solid #CC0000;
+    color: #CC0000;
 }
 
 #quest {
@@ -64,42 +62,315 @@ iframe {
     bottom: 0;
     right: 0;
 }
-
 .info div {
     margin-bottom: 2vh;
     border-radius: 2vw;
     width: 100%;
-    height: 85vh;
-}
-
-.info img {
-    width: 100%;
-    padding: 0.5vw;
 }
 
 #page1 {
+    height: 88vh;
     background: linear-gradient(to bottom right, #FF4040, yellow);
     column-count: 2;
+}
+
+    #page1 img {
+        height: 95%;
+    }
+
+.home {
+    padding-top: 8vh;
+    font-size: 3vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+}
+
+h7 {
+    font-size: 1.5vw;
+}
+
+h9 {
+    font-size: 2vw;
+}
+
+#an {
+    font-size: 5vw;
+    color: #CC0000;
+}
+
+    #an:hover {
+        text-shadow: 0.3vw 0.3vw white;
+    }
+
+.button {
+    margin-top: 15vh;
+    margin-left: 15vw;
+    border-radius: 1vw;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 15vw;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+#login {
+    text-decoration: none;
+    color: white;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+#pagec {
+    padding-top: 8vh;
+    font-size: 3vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to top right, #FF89CE, #ffc3a0);
+    column-count: 2;
+    height: 80vh;
+}
+
+.an {
+    padding-top: 8vh;
+    font-size: 2vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    margin-left: 2vw;
+    margin-top: 3vw;
+}
+
+#gaw {
+    color: #CC0000;
 }
 
 #page2 {
-    column-count: 2;
+    height: 50vh;
 }
+
+    #page2 div {
+        width: calc(95%/3);
+        vertical-align: top;
+        margin-right: 1vw;
+    }
+
+#cal {
+    margin-left: 0.5vw;
+    padding-top: 1vh;
+}
+
+    #cal img {
+        padding-left: 10vw;
+        height: 40%;
+        width: 40%;
+    }
+
+#ani {
+    height: 50vh;
+}
+
+    #ani img {
+        padding-bottom: 1.8vh;
+    }
 
 .feature {
     border-radius: 2vw;
-    height: 85vh;
     background: linear-gradient(to bottom right, #31D3F0, purple);
     display: inline-block;
-    width: 100%;
+    width: 33%;
+    height: 50vh;
+}
+
+.fename {
+    font-size: 3vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: central;
+}
+
+.feature img {
+    width: 35%;
+    padding-left: 10vw;
+}
+
+#page2 h3 {
+    font-size: 1vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    margin: 2vw;
 }
 
 #page3 {
-    background: linear-gradient(to bottom right, #FF4040, yellow);
+    font-size: 3vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    column-count: 2;
+    height: 90vh;
+    background: linear-gradient(to bottom, #FF4040, #FF7F50);
+}
+
+    #page3 img {
+        padding-top: 10vh;
+    }
+
+#htsu {
+    font-size: 3vw;
+    top: 0vh;
 }
 
 #page4 {
-    background: linear-gradient(to bottom right, #FF4040, yellow);
+    background: linear-gradient(to bottom right, #003366, #20B2AA);
+    height: 60vh;
+    column-count: 2;
+}
+
+    #page4 img {
+        width: 40%;
+        padding: 4vw;
+        padding-left: 10vw;
+    }
+
+.an1 {
+    padding-top: 8vh;
+    font-size: 2vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    margin-top: 3vh;
+    margin-right: 3vw;
+}
+
+.button1 {
+    margin-top: 2vh;
+    margin-left: 15vw;
+    border-radius: 1vw;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 1vw;
+    width: 15vw;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+    .button1 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .button1 span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .button1:hover span {
+        padding-right: 25px;
+    }
+
+        .button1:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+#page5 {
+    padding-top: 5vh;
+    font-size: 3vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to top right, #FF89CE, #ffc3a0);
+    column-count: 2;
+    height: 80vh;
+    padding-left: 3vw;
+    width:96.5%;
+}
+
+textarea {
+    width: 80%;
+    height: 30vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Verdana;
+    font-size: 1vw;
+    resize: none;
+}
+
+.an2 {
+    padding-top: 5vh;
+    font-size: 2vw;
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    margin-top: 3vh;
+    margin-right: 3vw;
+}
+
+#page5 img {
+    width: 60%;
+    padding: 4vw;
+}
+
+#hidden button {
+    background-color: #3399FF;
+    border-radius: 2vw;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#ty {
+    display: none;
 }
 
 #page1 img {
